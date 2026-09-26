@@ -1,0 +1,700 @@
+/* =========================================
+   EXPERIMENT LAB
+========================================= */
+
+.experiment-page {
+    width: 990px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 65px 0 70px;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+.header {
+    width: 1320px;
+    max-width: calc(100% - 80px);
+
+    margin: 30px auto 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 100;
+}
+
+.header .logo {
+    color: #fff;
+
+    font-size: 23px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    padding: 12px 20px;
+
+    border: 1px solid rgba(255,255,255,.25);
+
+    border-radius: 30px;
+
+    background: rgba(0,0,0,.2);
+
+    flex-shrink: 0;
+}
+
+.header .logo span {
+    color: #ff2020;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-left: auto;
+}
+
+.header .navbar a {
+    color: rgba(255,255,255,.85) !important;
+
+    text-decoration: none !important;
+
+    font-size: 10px;
+
+    letter-spacing: .5px;
+
+    padding: 9px 18px;
+
+    border: 1px solid rgba(255,255,255,.25);
+
+    border-radius: 25px;
+
+    background: rgba(0,0,0,.15);
+
+    white-space: nowrap;
+
+    transition: .3s ease;
+}
+
+.header .navbar a:hover {
+    color: #fff !important;
+
+    border-color: #ff2020;
+
+    background: rgba(255,0,0,.10);
+
+    box-shadow:
+        0 0 12px rgba(255,0,0,.25);
+}
+
+.header .navbar a.active {
+    color: #fff !important;
+
+    border-color: #ff2020;
+
+    background: rgba(255,0,0,.12);
+
+    box-shadow:
+        0 0 12px rgba(255,0,0,.25);
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 1100px) {
+
+    .header {
+        max-width: calc(100% - 50px);
+    }
+
+    .header .navbar {
+        gap: 5px;
+    }
+
+    .header .navbar a {
+        padding: 8px 12px;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .header .navbar {
+        width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 5px;
+    }
+
+    .header .navbar a {
+        flex-shrink: 0;
+    }
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.page-heading {
+    margin-bottom: 30px;
+}
+
+.page-heading > p:first-child {
+    color: #ff2020;
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 10px;
+}
+
+.page-heading h1 {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: 40px;
+
+    line-height: 1.1;
+
+    letter-spacing: 1px;
+}
+
+.page-heading h1 span {
+    color: #ff2020;
+}
+
+.page-heading div {
+    width: 42px;
+    height: 3px;
+
+    margin: 15px 0;
+
+    background: #ff2020;
+
+    box-shadow:
+        0 0 12px rgba(255,0,0,.5);
+}
+
+.page-heading > p:last-child {
+    color: rgba(255,255,255,.55);
+
+    font-size: 13px;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   3 CARD SEJAJAR
+========================================= */
+
+.experiment-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 16px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.experiment-card {
+    position: relative;
+
+    min-width: 0;
+
+    min-height: 270px;
+
+    padding: 25px;
+
+    background:
+        rgba(0,0,0,.68);
+
+    border:
+        1px solid rgba(255,255,255,.15);
+
+    transition: .3s ease;
+}
+
+.experiment-card:hover {
+    transform: translateY(-5px);
+
+    border-color:
+        rgba(255,30,30,.7);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.4),
+        0 0 20px rgba(255,0,0,.1);
+}
+
+
+/* NUMBER */
+
+.experiment-card small {
+    color: #ff2020;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+}
+
+
+/* TITLE */
+
+.experiment-card h2 {
+    color: #fff;
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+
+    margin: 18px 0 10px;
+}
+
+
+/* DESCRIPTION */
+
+.experiment-card > p {
+    color:
+        rgba(255,255,255,.55);
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.experiment-card button {
+    appearance: none;
+
+    border:
+        1px solid #ff2020;
+
+    background:
+        rgba(255,0,0,.07);
+
+    color: #fff;
+
+    padding:
+        9px 19px;
+
+    font-family: inherit;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.experiment-card button:hover {
+    background: #ff2020;
+
+    border-color: #ff2020;
+
+    box-shadow:
+        0 0 18px rgba(255,0,0,.4);
+}
+
+.experiment-card button:active {
+    transform: scale(.95);
+}
+
+
+/* =========================================
+   VISUAL RESULT
+========================================= */
+
+.visual-result {
+    margin-top: 20px;
+
+    height: 95px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transform:
+        translateY(10px)
+        scale(.96);
+
+    transition: .45s ease;
+}
+
+.visual-result.show {
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =========================================
+   HTML VISUAL
+========================================= */
+
+.html-visual {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border:
+        1px solid rgba(255,40,40,.4);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,0,0,.18),
+            rgba(0,0,0,.7)
+        );
+}
+
+.code-icon {
+    color: #ff2020;
+
+    font-size: 27px;
+
+    font-weight: bold;
+
+    text-shadow:
+        0 0 10px #ff2020,
+        0 0 25px rgba(255,0,0,.7);
+
+    animation:
+        htmlPulse 1.5s infinite;
+}
+
+.html-visual strong {
+    margin-top: 4px;
+
+    color: white;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+}
+
+.html-visual span {
+    margin-top: 4px;
+
+    color: #ff3030;
+
+    font-size: 7px;
+
+    letter-spacing: 1px;
+}
+
+.scan-line {
+    position: absolute;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 2px;
+
+    background: #ff2020;
+
+    box-shadow:
+        0 0 10px #ff2020;
+
+    animation:
+        scan 2s linear infinite;
+}
+
+@keyframes scan {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes htmlPulse {
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+
+/* =========================================
+   CSS VISUAL
+========================================= */
+
+.css-visual {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,0,0,.22),
+            transparent 65%
+        );
+}
+
+.energy-ring {
+    position: absolute;
+
+    width: 55px;
+    height: 55px;
+
+    border:
+        2px solid #ff2020;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 10px #ff2020,
+        inset 0 0 15px rgba(255,0,0,.7);
+
+    animation:
+        energyRotate 2s linear infinite;
+}
+
+.energy-ring::before,
+.energy-ring::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 7px;
+
+    border:
+        1px solid rgba(255,255,255,.6);
+
+    border-radius: 50%;
+}
+
+.energy-ring::after {
+    inset: 16px;
+
+    border-color: #ff2020;
+}
+
+.energy-core {
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+
+    background: #ff2020;
+
+    box-shadow:
+        0 0 10px #ff2020,
+        0 0 30px #ff2020;
+
+    animation:
+        corePulse .8s infinite alternate;
+}
+
+.css-visual strong {
+    position: absolute;
+
+    bottom: 7px;
+
+    color: white;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+}
+
+.css-visual span {
+    position: absolute;
+
+    top: 7px;
+
+    color: #ff3030;
+
+    font-size: 6px;
+
+    letter-spacing: 1px;
+}
+
+@keyframes energyRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes corePulse {
+    from {
+        transform: scale(.7);
+    }
+
+    to {
+        transform: scale(1.3);
+    }
+}
+
+
+/* =========================================
+   JS TERMINAL
+========================================= */
+
+.js-visual {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.terminal {
+    width: 90%;
+    height: 75px;
+
+    background: #050505;
+
+    border:
+        1px solid rgba(255,255,255,.18);
+
+    box-shadow:
+        0 0 20px rgba(255,0,0,.12);
+}
+
+.terminal-top {
+    height: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    padding-left: 7px;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.1);
+}
+
+.terminal-top span {
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #ff2020;
+}
+
+.terminal-text {
+    padding: 5px 9px;
+}
+
+.terminal-text p {
+    margin: 3px 0;
+
+    color: #ff3030;
+
+    font-family: monospace;
+
+    font-size: 6px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .header {
+        width: calc(100% - 40px);
+    }
+
+    .header .navbar {
+        margin-left: 35px;
+
+        gap: 7px;
+    }
+
+    .header .navbar a {
+        padding: 8px 12px;
+
+        font-size: 8px;
+    }
+
+    .experiment-page {
+        width: calc(100% - 40px);
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .header .navbar {
+        width: 100%;
+
+        margin-left: 0;
+
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        padding-bottom: 5px;
+    }
+
+    .experiment-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,617 @@
+/* =========================
+   BIODATA CONTAINER
+========================= */
+
+.biodata-container {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding-bottom: 80px;
+
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.bio-heading {
+
+    padding: 30px 0 35px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+
+}
+
+
+.bio-small {
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.bio-heading h1 {
+
+    font-size: 32px;
+
+    margin-top: 8px;
+
+}
+
+
+.bio-heading p {
+
+    color: #bbb;
+
+    margin-top: 5px;
+
+}
+
+
+.bio-number {
+
+    color: red;
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* =========================
+   TABS
+========================= */
+
+.tabs {
+
+    display: flex;
+
+    width: 100%;
+
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+
+}
+
+
+.tab {
+
+    flex: 1;
+
+    min-height: 75px;
+
+    border: none;
+
+    border-right: 1px solid rgba(255,255,255,0.15);
+
+    background: rgba(0,0,0,0.65);
+
+    color: #777;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.tab:first-child {
+
+    border-left: 1px solid rgba(255,255,255,0.15);
+
+}
+
+
+.tab span {
+
+    display: block;
+
+    color: red;
+
+    font-size: 10px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.tab:hover {
+
+    color: white;
+
+    background: rgba(255,0,0,0.1);
+
+}
+
+
+.tab.active {
+
+    color: white;
+
+    background: rgba(255,0,0,0.18);
+
+    box-shadow:
+        inset 0 -3px red;
+
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 50px;
+
+    min-height: 430px;
+
+    background: rgba(0,0,0,0.82);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+}
+
+
+.content.active {
+
+    display: block;
+
+}
+
+
+.section-label {
+
+    color: red;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.content h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.content h2::after {
+
+    content: "";
+
+    display: block;
+
+    width: 70px;
+
+    height: 3px;
+
+    background: red;
+
+    margin-top: 15px;
+
+    box-shadow:
+        0 0 10px red;
+
+}
+
+
+/* =========================
+   DATA DIRI
+========================= */
+
+.profile {
+
+    display: flex;
+
+    gap: 50px;
+
+    align-items: flex-start;
+
+}
+
+
+.photo {
+
+    width: 260px;
+
+    height: 320px;
+
+    flex-shrink: 0;
+
+    border: 1px solid rgba(255,0,0,0.5);
+
+    padding: 7px;
+
+    background: #080808;
+
+}
+
+
+.photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+.information {
+
+    flex: 1;
+
+}
+
+
+.data {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+
+}
+
+
+.data span {
+
+    color: #777;
+
+}
+
+
+.data strong {
+
+    color: white;
+
+    text-align: right;
+
+}
+
+
+/* =========================
+   PENDIDIKAN
+========================= */
+
+.education-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.education-item {
+
+    display: flex;
+
+    gap: 30px;
+
+    align-items: center;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+
+}
+
+
+.education-item > span {
+
+    color: red;
+
+    font-size: 12px;
+
+}
+
+
+.education-item small {
+
+    color: #777;
+
+    letter-spacing: 2px;
+
+}
+
+
+.education-item h3 {
+
+    margin-top: 8px;
+
+    font-size: 22px;
+
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.card {
+
+    min-height: 215px;
+
+    padding: 25px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    background: rgba(5,5,5,0.7);
+
+    position: relative;
+
+    transition: 0.3s;
+
+}
+
+
+.card:hover {
+
+    border-color: red;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 30px rgba(255,0,0,0.15);
+
+}
+
+
+.card-number {
+
+    color: red;
+
+    font-size: 11px;
+
+}
+
+
+.icon {
+
+    font-size: 27px;
+
+    margin: 25px 0;
+
+}
+
+
+.card h3 {
+
+    font-size: 18px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.card p {
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+
+}
+
+
+.skill > div:first-child {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+}
+
+
+.skill span {
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.skill b {
+
+    color: red;
+
+    font-size: 11px;
+
+}
+
+
+.skill-line {
+
+    height: 3px;
+
+    background: #333;
+
+    position: relative;
+
+}
+
+
+.skill-line i {
+
+    display: block;
+
+    width: 85%;
+
+    height: 100%;
+
+    background: red;
+
+    box-shadow:
+        0 0 10px red;
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .biodata-container {
+
+        padding: 0 20px 60px;
+
+    }
+
+
+    .tabs {
+
+        overflow-x: auto;
+
+    }
+
+
+    .tab {
+
+        min-width: 130px;
+
+    }
+
+
+    .content {
+
+        padding: 30px 20px;
+
+    }
+
+
+    .profile {
+
+        flex-direction: column;
+
+    }
+
+
+    .photo {
+
+        width: 100%;
+
+        max-width: 280px;
+
+    }
+
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .bio-heading {
+
+        align-items: flex-start;
+
+    }
+
+
+    .bio-number {
+
+        display: none;
+
+    }
+
+
+    .content h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .data {
+
+        flex-direction: column;
+
+        gap: 5px;
+
+    }
+
+
+    .data strong {
+
+        text-align: left;
+
+    }
+
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NAZAM — Random</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="random.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        NAZAM<span>.</span>
+    </div>
+
+<nav class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="biodata.html">BIODATA</a>
+    <a href="music.html">MUSIC</a>
+    <a href="funfacts.html">FUN FACTS</a>
+    <a href="random.html">RANDOM</a>
+    <a href="spiderman.html">SPIDER-MAN</a>
+    <a href="experiment.html">LAB</a>
+</nav>
+
+</header>
+
+
+<main class="random-container">
+
+
+    <section class="random-heading">
+
+        <div>
+
+            <div class="random-small">
+                RANDOM GENERATOR
+            </div>
+
+            <h1>
+                RANDOM<span>.</span>
+            </h1>
+
+            <p>
+                Klik tombol dan temukan fakta random.
+            </p>
+
+        </div>
+
+        <div class="random-number">
+            
+        </div>
+
+    </section>
+
+
+    <section class="random-box">
+
+        <span class="random-label">
+            RANDOM FACT
+        </span>
+
+
+        <div class="random-icon">
+            ?
+        </div>
+
+
+        <div id="randomFact">
+
+            Klik tombol untuk
+            mendapatkan fakta.
+
+        </div>
+
+
+        <button id="generateButton">
+
+            GENERATE
+
+            <b>→</b>
+
+        </button>
+
+    </section>
+
+
+</main>
+
+
+<script>
+
+const facts = [
+
+    "Nazam suka menggambar.",
+
+    "Nazam sedang belajar TKJ.",
+
+    "Nazam tertarik dengan dunia IT.",
+
+    "Nazam suka mendengarkan musik.",
+
+    "Nazam sedang belajar membuat website.",
+
+    "Nazam sedang belajar membuat game.",
+
+    "Nazam suka mencoba hal baru.",
+
+    "Nazam menggunakan Fedora di laptop.",
+
+    "Nazam suka musik yang tenang dan mellow."
+
+];
+
+
+const button =
+    document.getElementById("generateButton");
+
+const fact =
+    document.getElementById("randomFact");
+
+
+button.addEventListener("click", function() {
+
+    const index =
+        Math.floor(Math.random() * facts.length);
+
+    fact.classList.remove("show");
+
+    setTimeout(function() {
+
+        fact.textContent = facts[index];
+
+        fact.classList.add("show");
+
+    }, 150);
+
+});
+
+</script>
+
+</body>
+</html>

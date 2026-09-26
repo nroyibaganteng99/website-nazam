@@ -1,0 +1,306 @@
+.music-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px 80px;
+}
+
+
+/* HEADING */
+
+.music-heading {
+    padding: 30px 0 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.music-small {
+    color: #888;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.music-heading h1 {
+    font-size: 44px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+.music-heading h1 span {
+    color: red;
+}
+
+.music-heading p {
+    color: #777;
+}
+
+.music-number {
+    color: red;
+    font-size: 13px;
+}
+
+
+/* MAIN */
+
+.music-main {
+    margin-top: 25px;
+
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 50px;
+
+    padding: 40px;
+
+    background: rgba(0,0,0,.78);
+
+    border: 1px solid rgba(255,255,255,.13);
+}
+
+
+/* COVER */
+
+.music-cover {
+    aspect-ratio: 1 / 1;
+
+    padding: 15px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #090909,
+            #210000
+        );
+
+    border: 1px solid rgba(255,0,0,.45);
+
+    box-shadow:
+        0 0 35px rgba(255,0,0,.08);
+}
+
+.cover-inner {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 30px;
+
+    border: 1px solid rgba(255,255,255,.12);
+}
+
+.cover-inner span {
+    color: red;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.cover-inner small {
+    color: #666;
+    letter-spacing: 4px;
+}
+
+.cover-inner strong {
+    margin-top: 15px;
+
+    font-size: 38px;
+    line-height: .95;
+
+    letter-spacing: -1px;
+}
+
+.cover-inner em {
+    margin-top: 25px;
+
+    color: #777;
+
+    font-size: 10px;
+    letter-spacing: 4px;
+
+    font-style: normal;
+}
+
+
+/* CONTENT */
+
+.music-content {
+    align-self: center;
+}
+
+.music-label {
+    color: red;
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+}
+
+.music-content h2 {
+    margin: 18px 0;
+
+    font-size: 55px;
+
+    line-height: .95;
+}
+
+.music-content p {
+    max-width: 480px;
+
+    color: #777;
+
+    line-height: 1.8;
+}
+
+.music-line {
+    width: 70px;
+    height: 2px;
+
+    margin: 30px 0;
+
+    background: red;
+}
+
+.music-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.music-tags span {
+    padding: 8px 12px;
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    color: #777;
+
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+
+/* PLAYLIST */
+
+.playlist {
+    margin-top: 20px;
+
+    padding: 25px;
+
+    background: rgba(0,0,0,.78);
+
+    border: 1px solid rgba(255,255,255,.13);
+}
+
+.playlist-heading {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.playlist-heading span {
+    color: red;
+
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.playlist-heading small {
+    color: #555;
+
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.song {
+    display: grid;
+    grid-template-columns: 60px 1fr 30px;
+    align-items: center;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.song-number {
+    color: red;
+    font-size: 11px;
+}
+
+.song h3 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.song p {
+    margin-top: 5px;
+
+    color: #555;
+
+    font-size: 11px;
+}
+
+.song-icon {
+    color: #555;
+}
+
+
+/* QUOTE */
+
+.music-quote {
+    margin-top: 35px;
+
+    display: flex;
+    gap: 25px;
+    align-items: center;
+
+    color: #555;
+}
+
+.music-quote span {
+    color: red;
+    font-size: 10px;
+}
+
+.music-quote p {
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .music-main {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    .music-content h2 {
+        font-size: 42px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .music-heading h1 {
+        font-size: 35px;
+    }
+
+    .music-number {
+        display: none;
+    }
+
+    .cover-inner strong {
+        font-size: 30px;
+    }
+
+}

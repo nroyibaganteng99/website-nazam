@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NAZAM — Lab</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="experiment.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        NAZAM<span>.</span>
+    </div>
+
+    <nav class="navbar">
+
+        <a href="index.html">HOME</a>
+
+        <a href="biodata.html">BIODATA</a>
+
+        <a href="music.html">MUSIC</a>
+
+        <a href="funfacts.html">FUN FACTS</a>
+
+        <a href="random.html">RANDOM</a>
+
+        <a href="spiderman.html">SPIDER-MAN</a>
+
+        <a href="experiment.html" class="active">LAB</a>
+
+    </nav>
+
+</header>
+
+
+<main class="experiment-page">
+
+    <div class="page-heading">
+        <p>NAZAM'S PLAYGROUND</p>
+
+        <h1>
+            EXPERIMENT <span>LAB.</span>
+        </h1>
+
+        <div></div>
+
+        <p>
+            Coba beberapa fitur sederhana di website ini.
+        </p>
+    </div>
+
+
+ <section class="experiment-grid">
+
+    <!-- HTML -->
+    <div class="experiment-card">
+
+        <small>01</small>
+
+        <h2>HTML TEST</h2>
+
+        <p>
+            Lihat bagaimana struktur HTML bekerja.
+        </p>
+
+        <button onclick="runHTML()">
+            RUN HTML
+        </button>
+
+        <div class="visual-result html-visual" id="htmlResult">
+
+            <div class="code-icon">
+                &lt;/&gt;
+            </div>
+
+            <div class="scan-line"></div>
+
+            <strong>HTML SYSTEM</strong>
+
+            <span>STRUCTURE ONLINE</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- CSS -->
+    <div class="experiment-card">
+
+        <small>02</small>
+
+        <h2>CSS TEST</h2>
+
+        <p>
+            Aktifkan efek visual dengan CSS.
+        </p>
+
+        <button onclick="runCSS()">
+            RUN CSS
+        </button>
+
+        <div class="visual-result css-visual" id="cssResult">
+
+            <div class="energy-ring"></div>
+
+            <div class="energy-core"></div>
+
+            <strong>CSS ENERGY</strong>
+
+            <span>VISUAL EFFECT ACTIVE</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <div class="experiment-card">
+
+        <small>03</small>
+
+        <h2>JS TEST</h2>
+
+        <p>
+            Jalankan simulasi JavaScript.
+        </p>
+
+        <button onclick="runJS()">
+            RUN JS
+        </button>
+
+        <div class="visual-result js-visual" id="jsResult">
+
+            <div class="terminal">
+
+                <div class="terminal-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="terminal-text">
+                    <p>&gt; initializing...</p>
+                    <p>&gt; javascript online</p>
+                    <p>&gt; system ready_</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<script>
+
+function runHTML() {
+
+    const result = document.getElementById("htmlResult");
+
+    result.classList.remove("show");
+
+    setTimeout(() => {
+
+        result.classList.add("show");
+
+    }, 100);
+
+}
+
+
+function runCSS() {
+
+    const result = document.getElementById("cssResult");
+
+    result.classList.remove("show");
+
+    setTimeout(() => {
+
+        result.classList.add("show");
+
+        result.classList.toggle("active");
+
+    }, 100);
+
+}
+
+
+function runJS() {
+
+    const result = document.getElementById("jsResult");
+
+    result.classList.remove("show");
+
+    setTimeout(() => {
+
+        result.classList.add("show");
+
+    }, 100);
+
+}
+
+</script>
+
+</script>
+</body>
+</html>

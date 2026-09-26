@@ -1,0 +1,171 @@
+.random-container {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 0 20px 80px;
+}
+
+
+/* HEADING */
+
+.random-heading {
+    padding: 30px 0 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.random-small {
+    color: #888;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+}
+
+.random-heading h1 {
+    margin: 10px 0;
+
+    font-size: 44px;
+}
+
+.random-heading h1 span {
+    color: red;
+}
+
+.random-heading p {
+    color: #777;
+}
+
+.random-number {
+    color: red;
+}
+
+
+/* BOX */
+
+.random-box {
+    min-height: 470px;
+
+    margin-top: 25px;
+
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        rgba(0,0,0,.82);
+
+    border:
+        1px solid rgba(255,255,255,.13);
+}
+
+.random-label {
+    color: red;
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+}
+
+.random-icon {
+    width: 80px;
+    height: 80px;
+
+    margin: 30px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid red;
+
+    color: red;
+
+    font-size: 30px;
+
+    border-radius: 50%;
+}
+
+#randomFact {
+    max-width: 650px;
+
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-size: 25px;
+
+    line-height: 1.4;
+
+    opacity: .6;
+
+    transition: .3s;
+}
+
+#randomFact.show {
+    opacity: 1;
+}
+
+
+.random-box button {
+    margin-top: 35px;
+
+    padding: 15px 25px;
+
+    color: white;
+
+    background: transparent;
+
+    border: 1px solid red;
+
+    cursor: pointer;
+
+    letter-spacing: 2px;
+
+    transition: .3s;
+}
+
+.random-box button:hover {
+    background: red;
+
+    box-shadow:
+        0 0 20px rgba(255,0,0,.25);
+}
+
+.random-box button b {
+    margin-left: 20px;
+}
+
+
+@media (max-width: 600px) {
+
+    .random-number {
+        display: none;
+    }
+
+    .random-box {
+        padding: 30px 20px;
+    }
+
+    #randomFact {
+        font-size: 20px;
+    }
+
+}
